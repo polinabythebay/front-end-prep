@@ -1,11 +1,14 @@
 #### JS Questions:
 
+---
+
 #### Explain event delegation
 
 Event Propagation encompasses both event bubbling and event capturing. Event capturing is supported in few browsers and is rarely used.
 
 There are situations where a single event, like a mouse click, may be handled by more than 1 event handler defined at different levels of the DOM hierarchy. The event bubbling process starts by executing the event handler for the individual elements at the lowest level (ex. links, table cells). From there the event “bubbles up” to the containing elements (ex. table or form) and higher level elements (like the body of the page). At the end the event is handled by the highest level in the DOM hierarchy (document element). 
 
+---
 
 #### Explain how `this` works in JavaScript
 
@@ -55,6 +58,7 @@ var obj = {
 
 obj.foo(); // 2
 ```
+---
 
 #### Explain how prototypal inheritance works
 
@@ -65,6 +69,8 @@ Instead of classes, an object inherits from another object.
  In addition to their set of properties, almost all objects also have a prototype. A prototype is another object that is used as a fallback source of properties. When an object gets a request for a property that it does not have, its prototype will be searched for the property, then the prototype’s prototype, and so on.
 
 A prototype can be used at any time to add new properties and methods to all objects based on it.
+
+---
 
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
