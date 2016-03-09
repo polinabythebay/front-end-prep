@@ -1,6 +1,12 @@
 #### JS Questions:
 
-* Explain event delegation
+#### Explain event delegation
+
+Event Propagation encompasses both event bubbling and event capturing. Event capturing is supported in few browsers and is rarely used.
+
+There are situations where a single event, like a mouse click, may be handled by more than 1 event handler defined at different levels of the DOM hierarchy. The event bubbling process starts by executing the event handler for the individual elements at the lowest level (ex. links, table cells). From there the event “bubbles up” to the containing elements (ex. table or form) and higher level elements (like the body of the page). At the end the event is handled by the highest level in the DOM hierarchy (document element). 
+
+
 * Explain how `this` works in JavaScript
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
