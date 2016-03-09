@@ -1,7 +1,16 @@
 #### General Questions:
 
 * What did you learn yesterday/this week?
+
 * What excites or interests you about coding?
+
+-- What I love about it is you get to engage in a creative, design-oriented activity that is done in a rigorous, systematic way. 
+-- You get to be nerdy and look for optimizations. 
+-- It’s a continual learning process that deepens my ability to communicate and teach. Learning Haskell makes me a better person. 
+-- My first work experience showed me how exciting working as an engineer can be and how I can benefit communities through my work. 
+-- Software engineering is a means through which I can be proud of building a service or utility so new users aren’t stuck with old user’s problems.
+-- At the end of the day, the thing that keeps me going is getting to help people with actual problems. 
+
 * What is a recent technical challenge you experienced and how did you solve it?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
