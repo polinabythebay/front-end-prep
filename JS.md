@@ -148,6 +148,12 @@ Further: http://howtonode.org/why-use-closure
 
 #### What's the difference between host objects and native objects?
 
+- Native: an object in an ECMAScript implementation whose semantics are fully defined by this specification rather than by the host environment.
+- Native objects: Object (constructor), Date, Math, parseInt, eval, string methods like indexOf and replace, array methods, etc.
+- Native objects have an internal [[Class]] property of one of the following: "Arguments", "Array", "Boolean", "Date", "Error", "Function", "JSON", "Math", "Number", "Object", "RegExp", and "String".
+- A Host object is an object provided by the environment in order to serve a specific purpose to that environment not defined in by the specification.
+- Host objects (assuming browser environment): window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll.
+
 ---
 
 
