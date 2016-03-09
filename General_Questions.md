@@ -11,13 +11,21 @@
 - Software engineering is a means through which I can be proud of building a service or utility so new users aren’t stuck with old user’s problems.
 - At the end of the day, the thing that keeps me going is getting to help people with actual problems. 
 
-* What is a recent technical challenge you experienced and how did you solve it?
-* What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
-* Talk about your preferred development environment.
-* Which version control systems are you familiar with?
-* Can you describe your workflow when you create a web page?
-* If you have 5 different stylesheets, how would you best integrate them into the site?
-* Can you describe the difference between progressive enhancement and graceful degradation?
+#### What is a recent technical challenge you experienced and how did you solve it?
+
+#### What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
+
+#### Talk about your preferred development environment.
+
+#### Which version control systems are you familiar with?
+
+Definitely Git (Rebase vs Merge). I've used Perforce in the past. I've heard of Subversion.
+
+#### Can you describe your workflow when you create a web page?
+
+#### If you have 5 different stylesheets, how would you best integrate them into the site?
+
+#### Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
