@@ -7,5 +7,6 @@
 ### Interviewing
 
 - https://github.com/h5bp/Front-end-Developer-Interview-Questions
+- http://blog.triplebyte.com/how-to-pass-a-programming-interview
 
 
