@@ -171,7 +171,17 @@ Further: http://howtonode.org/why-use-closure
 * What's the difference between an "attribute" and a "property"?
 * Why is extending built-in JavaScript objects not a good idea?
 * Difference between document load event and document ready event?
-* What is the difference between `==` and `===`?
+
+---
+
+#### What is the difference between `==` and `===`?
+
+`==` will compare equality after doing type conversions. the rules by which certain cases are converted are complicated and hard to memorize. `===` will compare equality without doing any type conversions.
+
+3 == 3 will be true and 3 == ‘3’ will be true, but 3 === ‘3’ will be false and 3 === 3 will be true.
+
+---
+
 * Explain the same-origin policy with regards to JavaScript.
 * Make this work:
 ```javascript
