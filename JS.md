@@ -94,9 +94,21 @@ The pair of parenthesis surrounding the anonymous function turns the anonymous f
 
 ---
 
-* What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
-* What is a closure, and how/why would you use one?
+#### What's the difference between a variable that is: `null`, `undefined` or undeclared?
+
+- `undeclared` variables don’t even exist
+- `undefined` variables exist, but don’t have anything assigned to them
+- `null` variables exist and have null assigned to them
+
+Further reading: http://stackoverflow.com/questions/833661/what-is-the-difference-in-javascript-between-undefined-and-not-defined/834095#834095.
+
+How would you go about checking for any of these states?
+
+---
+
+####What is a closure, and how/why would you use one?
+
+
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
 * What's the difference between host objects and native objects?
