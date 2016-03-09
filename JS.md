@@ -108,6 +108,31 @@ How would you go about checking for any of these states?
 
 ####What is a closure, and how/why would you use one?
 
+A Closure is a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope.
+
+```
+function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+//generates closure
+var add5 = makeAdder(5);
+//uses closure
+var add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+```
+
+Examples:
+
+- A use of closure is to call a function that generates another function or group of functions but hides all the state in private variables within the closure.
+- Variables from the closure are part of the function itself, no matter how it's called later. This is useful for events/callbacks.
+
+Further: http://howtonode.org/why-use-closure
+---
+
 
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
