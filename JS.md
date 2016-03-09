@@ -56,7 +56,16 @@ var obj = {
 obj.foo(); // 2
 ```
 
-* Explain how prototypal inheritance works
+#### Explain how prototypal inheritance works
+
+Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+
+Instead of classes, an object inherits from another object.
+
+ In addition to their set of properties, almost all objects also have a prototype. A prototype is another object that is used as a fallback source of properties. When an object gets a request for a property that it does not have, its prototype will be searched for the property, then the prototype’s prototype, and so on.
+
+A prototype can be used at any time to add new properties and methods to all objects based on it.
+
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
