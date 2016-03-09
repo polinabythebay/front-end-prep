@@ -70,3 +70,17 @@ Definitely Git (Rebase vs Merge). I've used Perforce in the past. I've heard of 
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 * What does CORS stand for and what issue does it address?
+
+---
+
+####How a web request is sent after typing into the address bar
+
+- browser gets domain name
+- queries DNS for the IP address
+- if DNS server has the address for domain, it will return it. otherwise it will forward it to the next DNS server
+- after a successful DNS request, client now has the IP address
+- then we get to the HTTP request, which has a header and content
+- this involves the specific path we inputted into the address bar, cookies, form data
+- once HTTP request is send to the server, server generates some sort of response. it can be 200 OK, or 300 redirect, 400 client error, 500 server error
+- server can respond with a static page or more dynamic content
+- if the response is HTML then browser will parse the HTML to render the page
