@@ -205,3 +205,18 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * Explain the difference between synchronous and asynchronous functions.
 * What is event loop?
   * What is the difference between call stack and task queue?
+ 
+---
+
+#### If you want to check if a variable is an object, should you use typeof? What is a better way to check a variable’s type?
+
+Typeof is a unary operator, it is not a function. if you do typeof null it will say it’s an object. If you do typeof [1,2,3] it will say it’s an object, even though you may have wanted to check to see if it’s an array. An alternative is to use something like Array.isArray(obj).
+
+---
+
+#### let vs var
+
+- let works very much like var. The main difference is that the scope of a var variable is the entire enclosing function
+- for example, if you declare the variable with let I think it’s only available in the for loop. whereas with var it would be available in the whole function
+
+
