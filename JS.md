@@ -131,12 +131,26 @@ Examples:
 - Variables from the closure are part of the function itself, no matter how it's called later. This is useful for events/callbacks.
 
 Further: http://howtonode.org/why-use-closure
+
+---
+
+#### What's a typical use case for anonymous functions?
+
+- Anonymous functions can be used to store a bit of functionality in a variable and pass that piece of functionality around. 
+- Passing it as an argument to a function is a typical use case, for example a callback function.
+
+---
+
+#### How do you organize your code? (module pattern, classical inheritance?)
+
 ---
 
 
-* What's a typical use case for anonymous functions?
-* How do you organize your code? (module pattern, classical inheritance?)
-* What's the difference between host objects and native objects?
+#### What's the difference between host objects and native objects?
+
+---
+
+
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
 * What's the difference between `.call` and `.apply`?
 * Explain `Function.prototype.bind`.
