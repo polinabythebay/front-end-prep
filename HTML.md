@@ -9,7 +9,7 @@
 * What are `data-` attributes good for?
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
 
----
+--
 
 #### Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
 
