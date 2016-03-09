@@ -7,7 +7,55 @@ Event Propagation encompasses both event bubbling and event capturing. Event cap
 There are situations where a single event, like a mouse click, may be handled by more than 1 event handler defined at different levels of the DOM hierarchy. The event bubbling process starts by executing the event handler for the individual elements at the lowest level (ex. links, table cells). From there the event “bubbles up” to the containing elements (ex. table or form) and higher level elements (like the body of the page). At the end the event is handled by the highest level in the DOM hierarchy (document element). 
 
 
-* Explain how `this` works in JavaScript
+#### Explain how `this` works in JavaScript
+
+What `this` is
+- A special identifier that is automatically defined in the scope of every function.
+- An elegant way of implictly passing along an object reference
+- `this` is not an author-time binding but a runtime binding. It is contextual based on the conditions of the function's invocation. It has to do with how the function was called, not where it was called.
+- `this` is a binding made for each function invocation, based entirely on its call-site (how the function is called).
+
+What `this` IS NOT
+
+- It does not let a function get a reference to itself
+- `this` DOES NOT refer to a function's lexical scope
+- You CANNOT use a `this` reference to look something up in a lexical scope. It is not possible.
+
+How do we find the call-site, how the function is called
+
+- The call-site we care about is in the invocation before the currently executing function.
+- Inspect the call-site and determine if one of the 4 rules apply.
+
+
+**Rule #1**: standalone function invocation, `this` is global object
+
+```
+function foo() {
+    console.log( this.a ); //resolves to global variable a
+}
+
+var a = 2;
+
+foo(); // 2
+```
+
+- NOTE: If strict mode is in effect, the global object is not eligible for the default binding, so the this is instead set to undefined.
+
+**Rule #2**: When there is a context object for a function reference, the implicit binding rule says that it's that object which should be used for the function call's this binding.
+
+```
+function foo() {
+    console.log( this.a );
+}
+
+var obj = {
+    a: 2,
+    foo: foo
+};
+
+obj.foo(); // 2
+```
+
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
