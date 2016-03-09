@@ -84,8 +84,16 @@ AMD is generally more used in client-side (in-browser) JavaScript development du
 
 ---
 
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+#### Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
+
+By placing the anonymous function in parentheses (a group context), the entire group is evaluated and the value returned. The returned value is actually the entire anonymous function itself, so all we have to do is add two parentheses after it to invoke it.
+
+What needs to be changed to properly make it an IIFE? Parentheses around the whole thing.
+
+The pair of parenthesis surrounding the anonymous function turns the anonymous function into a function expression or variable expression. So instead of a simple anonymous function in the global scope, or wherever it was defined, we now have an unnamed function expression `(function foo(){ })();`.
+
+---
+
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
   * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
